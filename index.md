@@ -1,4 +1,4 @@
-# Logi.Casa Input Controller
+# About
 
 Welcome to the Logi.Casa Setup Page.
 
