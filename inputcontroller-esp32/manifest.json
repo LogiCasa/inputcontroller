@@ -2,7 +2,7 @@
   "chipFamily": "ESP32",
   "parts": [
     {
-      "path": "project-template-esp32/inputcontroller.bin",
+      "path": "inputcontroller-esp32/inputcontroller-esp32.bin",
       "offset": 0
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "name": "Input Controller",
-  "version": "1.0",
+  "name": "inputcontroller",
+  "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
@@ -8,7 +8,7 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "project-template-esp32/inputcontroller.bin",
+          "path": "inputcontroller-esp32/inputcontroller-esp32.bin",
           "offset": 0
         }
       ]
