@@ -14,7 +14,7 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: logicasa.input-controller
+    name: logicasa.inputcontroller
     version: "1.0"
 
 
