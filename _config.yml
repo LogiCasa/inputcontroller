@@ -1,4 +1,4 @@
 # CHANGEME: Set these variable to your liking
 title: Logi.Casa Input Controller
 description: Powered by ESPHome and ESP Web Tools
-remote_theme: chrisrhymes/bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme@v1.0.0
