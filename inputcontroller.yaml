@@ -109,8 +109,8 @@ interval:
               id: statusled
               flash_length: 1950ms
               green: 0.0
-              red: 1.0
-              blue: 0.0
+              red: 0.0
+              blue: 1.0
 
 light:
   - platform: neopixelbus
