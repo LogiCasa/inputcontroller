@@ -15,7 +15,7 @@ esphome:
   # configuration and updates.
   project:
     name: logicasa.inputcontroller
-    version: "1.0"
+    version: "2.0"
 
 
 esp32:
@@ -96,14 +96,14 @@ interval:
                     id: statusled
                     green: 1.0
                     red: 0.0
-                    blue: 0.0 
+                    blue: 1.0 
               else:
                 - light.turn_on:
                     id: statusled
                     flash_length: 1000ms
-                    green: 1.0
+                    green: 0.0
                     red: 0.0
-                    blue: 0.0
+                    blue: 1.0
         else:
           - light.turn_on:
               id: statusled
