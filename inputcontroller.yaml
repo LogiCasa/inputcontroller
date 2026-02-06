@@ -20,6 +20,8 @@ esphome:
 
 esp32:
   board: nodemcu-32s
+  framework:
+    type: esp-idf
 
 # To be able to get logs from the device via serial and api.
 logger:
@@ -113,15 +115,16 @@ interval:
               blue: 1.0
 
 light:
-  - platform: neopixelbus
-    variant: WS2812
-    pin: 5
-    num_leds: 1
-    name: "Status LED"
+  - platform: esp32_rmt_led_strip
     id: statusled
-    icon: "mdi:led-outline"
+    name: "Status LED"
+    pin: GPIO5
+    num_leds: 1
+    chipset: WS2812
+    rgb_order: GRB
     restore_mode: ALWAYS_ON
-    internal: True
+    internal: true
+    icon: mdi:led-outline
 
 output:
   - platform: template
