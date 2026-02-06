@@ -1,0 +1,32 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build ESPHome firmware
+        uses: esphome/build-action@v6
+        with:
+          yaml-file: inputcontroller.yaml
+          complete-manifest: true
+
+      - name: Prepare website dir
+        run: |
+          mkdir -p site
+          cp *.bin site/
+          cp manifest.json site/
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
